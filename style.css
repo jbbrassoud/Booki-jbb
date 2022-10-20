@@ -1,0 +1,14 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    
+}
+
+li a:hover{
+    color:blue;
+}
