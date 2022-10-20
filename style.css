@@ -1,8 +1,10 @@
 body{
+    color:black;
     font-family: 'Raleway', sans-serif;
 }
 a{
     text-decoration: none;
+    color: black;
 }
 li{
     list-style: none;
