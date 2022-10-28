@@ -48,6 +48,9 @@ header li a{
     font-weight: 500;
     padding:44px 30px 10px 30px;
 }
+.bg-grey{
+    background-color: #F2F2F2;
+}
 
 header li a:hover{
     color:#0065FC;
