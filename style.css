@@ -1,8 +1,11 @@
 body{
     color:black;
     font-family: 'Raleway', sans-serif;
+    font-style: normal;
     width:1400px;
     margin: 0 auto;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 header{
@@ -11,6 +14,7 @@ header{
     justify-content: space-between;
     height: 110px;
     align-items: center;
+    margin-bottom: 20px;
 }
 header img{
     height: 19px;
@@ -25,6 +29,9 @@ header img{
 h1{
     font-size: 22px;
     font-weight: 700;
+    margin:0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 h2{
@@ -32,6 +39,14 @@ h2{
     font-weight: 700;
 }
 
+h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
 a{
     text-decoration: none;
     color: black;
@@ -49,7 +64,12 @@ header li a{
     padding:44px 30px 10px 30px;
 }
 .bg-grey{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
     background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 header li a:hover{
@@ -128,7 +148,6 @@ i{
 }
 
 p i{
-    display: flex;
     text-align: center;
     padding: 7px 10px 7px 10px;
     justify-content: center;
@@ -138,61 +157,57 @@ p i{
     margin-right: 10px;
 }
 
-#hebergements{
+.hebergements{
     display: flex;
     flex-direction: row;
 }
 
-#bloc6{
-    margin-right:20px;
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: column;
-    background-color:#F2F2F2;
-    height: 625px;
-    width: 880px;
-    border-radius: 20px;
+.hebergements section{
     padding: 40px;
-    overflow: scroll;
-
+    height: 585px;
+    width: 800px;
 }
 
-#bloc6 section{
+.bloc3{
     display: flex;
     flex-direction: row;
-    overflow: initial;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#bloc6 article{
+.bloc3 article{
     display: flex;
     flex-direction: row;
     width: 246px;
-    border-radius: 20px;
-    background-color: white;
+    height: 200px;
 }
 
-#bloc6 article a img{
+.bloc3 article a img{
     height: 124px;
     width: 246px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-    background-color: white;
 }
+.bloc3 article p, .bloc3 article h3{
+    margin:4px 14px 4px 14px;
+} 
+
 #popular{
     margin-left:20px;
     background-color:#F2F2F2;
-    display: column;
+    display: flex;
+    justify-content: space-around;
     flex-direction: column;
-    width: 420px;
-    height: 625px;
+    width: 380px;
+    height: 585px;
     border-radius: 20px;
     padding: 40px;
-    overflow: scroll;
 }
 
-#popular section{
+.row{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 #popular a{
@@ -205,21 +220,68 @@ p i{
     height: 144px;
     width: 137;
     overflow: hidden;
-    border-radius: 20px 0px 0px 0px;
+    border-radius: 20px 0px 0px 20px;
     background-color: white;
 }
-
-
-
 
 .vert-txt{
     width: 178px;
     display: flex;
     flex-direction: column;
+    padding:14px;
 }
 
+.card{
+    background-color: white;
+    border-radius: 20px;
+    border: #ffffff solid 5px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
 
+}
 
+.activites{
+    padding: 50px;
+}
+#ph::placeholder{
+    color:black;
+    padding-left:10px;
+}
+
+.activites section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 444px;
+    width: 302px;
+    border-radius: 20px;
+    overflow:hidden;
+
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+figure:hover{
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+.activites a img{
+    align-self: center;
+    height: 462px;
+    box-sizing: content-box;
+
+}
+
+figcaption{
+    font-size: 16px;
+    font-weight: 700;
+padding: 19px;
+    background-color: white;
+}
 
 footer{
     background-color: #F2F2F2;
@@ -227,9 +289,17 @@ footer{
     height: 225px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 footer section{
+    font-size: 18px;
     display: flex;
     flex-direction: column;
+    margin: 40px;
+    justify-content: space-around;
+}
+
+#abold{
+    font-weight: 700;
 }
