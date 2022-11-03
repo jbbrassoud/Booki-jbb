@@ -178,13 +178,14 @@ p i{
 .bloc3 article{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 246px;
     height: 200px;
 }
 
 .bloc3 article a img{
-    height: 124px;
-    width: 246px;
+    height: 119px;
+    width: 236px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
@@ -195,16 +196,14 @@ p i{
 .stars{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    margin:4px 14px 4px 14px;
-    height: 12px;
+    justify-content: space-between;
+    margin:5px 14px 5px 14px;
+    font-size: 12px;
+    width: 70px;
 }
-.stars:only-child{
-    height: 12px;
-    width: 12px;
-}
-.s-gray{
-    color: #F2F2F2;
+
+.gray{
+    color:#F2F2F2;
 }
 #popular{
     margin-left:20px;
@@ -248,11 +247,13 @@ p i{
 .card{
     background-color: white;
     border-radius: 20px;
-    border: #ffffff solid 5px;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.card img{
+    border: #ffffff solid 5px;
 
 }
-
 .activites{
     padding: 50px;
 }
