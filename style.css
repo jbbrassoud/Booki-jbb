@@ -71,7 +71,7 @@ header li a{
     justify-content:space-between;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 20px;
+    padding: 40px;
 }
 
 header li a:hover{
@@ -170,10 +170,10 @@ p i{
 .hebergements{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .hebergements section{
-    padding: 40px;
     height: 585px;
     width: 800px;
 }
@@ -208,7 +208,7 @@ p i{
 .gray{
     color:#F2F2F2;
 }
-#popular{
+.popular{
     margin-left:20px;
     background-color:#F2F2F2;
     display: flex;
@@ -231,13 +231,12 @@ p i{
     align-items: center;
 }
 
-#popular a{
+.popular a{
     display: flex;
     flex-direction: row;
     }
 
-#popular a img{
-
+.popular a img{
     height: 144px;
     width: 137;
     overflow: hidden;
@@ -247,10 +246,11 @@ p i{
 
 .vert-txt{
     width: 178px;
+    height: 124px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 124px;
+
     padding: 10px 5px 5px 5px;
 }
 
@@ -315,7 +315,7 @@ figure:hover{
 figcaption{
     font-size: 16px;
     font-weight: 700;
-padding: 19px;
+    padding: 19px;
     background-color: white;
 }
 
