@@ -199,7 +199,7 @@ p i{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-.bloc3 article p, .bloc3 article h3{
+.bloc3 article p, .bloc3 article h3, .vert-txt p, .vert-txt h3{
     margin:4px 14px 4px 14px;
 } 
 
@@ -249,9 +249,9 @@ p i{
     width: 178px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 14px;
+    justify-content: flex-start;
     height: 124px;
+    padding: 10px 5px 5px 5px;
 }
 
 .card{
@@ -272,7 +272,7 @@ p i{
     margin:5px 14px 5px 14px;
     font-size: 12px;
     width: 70px;
-    align-self: flex-end;
+    justify-self: end;
 }
 
 .activites{
