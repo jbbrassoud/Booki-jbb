@@ -192,6 +192,20 @@ p i{
     margin:4px 14px 4px 14px;
 } 
 
+.stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin:4px 14px 4px 14px;
+    height: 12px;
+}
+.stars:only-child{
+    height: 12px;
+    width: 12px;
+}
+.s-gray{
+    color: #F2F2F2;
+}
 #popular{
     margin-left:20px;
     background-color:#F2F2F2;
