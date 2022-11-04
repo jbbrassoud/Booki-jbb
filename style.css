@@ -2,7 +2,8 @@ body{
     color:black;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
-    max-width: 1400px;
+    max-width: 1300px;
+    padding:0 50px 0 50px;
     margin: 0 auto;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -25,19 +26,20 @@ header img{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    max-width: 1300px;
-    padding:0 50px 0 50px;
 }
 
 h1{
     font-size: 22px;
     font-weight: 700;
     margin:0;
+
     margin-block-start: 0;
     margin-block-end: 0;
+    margin-bottom: 20px;
 }
 
 h2{
+
     font-size: 18px;
     font-weight: 700;
 }
@@ -203,7 +205,6 @@ p i{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
     width:100%;
     margin:3% 0 2% 0;
     transition-duration: 0.5s;
@@ -258,17 +259,21 @@ p i{
 }
 
 .popular article{
+
     display: flex;
     flex-direction: row;
+    width:100%;
+    height:144px;
     overflow: hidden;
     }
 
 .popular article img{
     display: flex;
     width: 40%;
-    height: 124px;
     border-radius: 20px 0px 0px 20px;
     background-color: white;
+    object-fit:cover;
+    justify-self: center;
 }
 
 .vert-txt{
@@ -289,7 +294,6 @@ p i{
 .card img{
     border: #ffffff solid 5px;
     display: flex;
-    overflow: hidden;
     object-fit: cover;
 }
 
@@ -344,12 +348,6 @@ figure{
     margin-block-start: 0em;
     margin-block-end: 0em;
     border-radius: 20px;
-}
-
-
-.activites a:hover{
-    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.4);
-
 }
 
 .activites a img{
