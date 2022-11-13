@@ -42,6 +42,14 @@ ul{
     width:100%;
 }
 
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: 350px;
+}
+
 h1{
     font-size: 22px;
     font-weight: 700;
@@ -74,7 +82,7 @@ span{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 2% 0 2% 0;
+    padding: 1% 0 3% 0;
 }
 
 a{
@@ -484,6 +492,10 @@ footer a{
         padding: 0 20px à 20px;
     }
 
+    nav{
+        height: auto;
+    }
+
     .houses{
         flex-direction: column;
         width: 100%;
@@ -605,9 +617,10 @@ footer a{
         #content ul{
             width:100%;
             flex-wrap: wrap;
-            height:150px;
+            height:130px;
             justify-content: space-around;
-            margin-bottom: 20px;
+            padding: 0;
+            margin-bottom: 40px;
         }
         #content li{
             height: 20px;
@@ -630,6 +643,10 @@ footer a{
         .filter{
             flex-direction: column;
             align-items: flex-start;
+        }
+
+        .filter h2{
+            padding:35px 0 0 0;
         }
 
 
