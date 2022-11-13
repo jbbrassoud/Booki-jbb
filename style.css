@@ -168,20 +168,23 @@ i{
 }
 
 .btn i{
-
     color: white;
     font-size: 18px;
 }
+
 .filter{
     display: flex;
     flex-direction: row;
-    padding:20px 0 20px 0;
+    align-items: center;
+}
+
+.filter h2{
+    display: flex;
+    flex-direction: row;
+    padding:20px 20px 20px 0;
     align-content: center;
 }
 
-#content ul h2{
-    margin: 0px 20px 0px 0;
-}
 #content li{
     margin-right: 30px;
 }
@@ -602,7 +605,7 @@ footer a{
         #content ul{
             width:100%;
             flex-wrap: wrap;
-            height:180px;
+            height:150px;
             justify-content: space-around;
             margin-bottom: 20px;
         }
@@ -610,20 +613,23 @@ footer a{
             height: 20px;
             width:48%;
             margin:auto;
+            font-size: 18px;
+            margin: 0;
         }
         #content li a{
             justify-content: flex-start;
             font-size: 11px;
             flex-wrap: nowrap;
-        }
-        #content li i{
-            font-size: 18px;
-            margin: 0;
+            flex:2;
         }
         .bg-gray{
             width: 90%;
             padding: 5%;
             border-radius: 0%;
+        }
+        .filter{
+            flex-direction: column;
+            align-items: flex-start;
         }
 
 
@@ -697,9 +703,7 @@ footer a{
             max-width:100%;
         }
 
-        #content ul h2{
-            width:100vw;
-        }
+
         footer{
             flex-direction: column;
             height: auto;
