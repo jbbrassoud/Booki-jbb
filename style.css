@@ -103,9 +103,6 @@ header li{
     transition-duration: 0.5s;
 }
 
-li a{
-    height: 100%;
-}
 
 
 header li:hover{
@@ -245,7 +242,7 @@ i{
     justify-content:space-between;
     background-color: #F2F2F2;
     border-radius: 20px;
-    height:545px;
+
     padding: 40px;
 }
 
@@ -253,7 +250,6 @@ i{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100%;
 }
 
 .hebergements{
@@ -270,7 +266,6 @@ i{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 460px;
 
 }
 .bloc6 a{
@@ -278,6 +273,8 @@ i{
     flex-direction: row;
     width: 30%;
     height: 200px;
+    margin:15px 0 15px 0;
+
 }
 
 .bloc6 article{
@@ -286,7 +283,7 @@ i{
     justify-content: space-between;
     width:100%;
     transition-duration: 0.5s;
-    overflow: hidden;
+    
 }
 .bloc6 article:hover , .bloc3 article:hover , .activites a:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -304,7 +301,7 @@ i{
     border: #ffffff solid 5px;
 }
 .bloc6 article p, .bloc6 article h3, .vert-txt p, .vert-txt h3{
-    margin:4px 14px 4px 14px;
+    margin:4px 5px 4px 14px;
 } 
 
 .gray{
@@ -334,7 +331,10 @@ i{
     justify-content: space-between;
     align-items: center;
 }
-
+.popular a{
+    height:144px;
+    margin:15px 0 15px 0;
+}
 .popular article{
 
     display: flex;
@@ -356,9 +356,7 @@ i{
 .bloc3{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 510px;
-    margin-top:0px;
+    justify-content: space-between;
 
 }
 .vert-txt{
@@ -374,7 +372,9 @@ i{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card img{
     border: #ffffff solid 5px;
@@ -484,7 +484,7 @@ footer a{
 
 
 
-@media screen and (max-width: 992px)
+@media only screen and (max-width: 992px) and (min-width:769px)
 {
     body{
         max-width: 992px;
@@ -492,37 +492,27 @@ footer a{
         padding: 0 20px à 20px;
     }
 
-    nav{
-        height: auto;
-    }
 
     .houses{
         flex-direction: column;
-        width: 100%;
     }
 
 
     .hebergements{
         width:90%;
         margin-bottom: 50px;
-        height: 726px;
         margin:0 0% 3% 0%;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .bloc6{
-        margin-top: 20px;
+        justify-content: space-between;
     }
 
-    .bg-gray{
-        height: auto;
-        max-height: 100%;
-    }
 
     .popular{
         justify-content: space-between;
         width:90%;
-        height: 200px;
     }
 
     .popular a{
@@ -535,7 +525,6 @@ footer a{
     .bloc3{
         flex-direction: row;
         justify-content: space-between;
-        height: auto;
     }
 
     .popular h3{
@@ -547,8 +536,9 @@ footer a{
     .activites a, figure{
         height:267px;
     }
+}
 
-    @media screen and (max-width: 768px){
+    @media only screen and (max-width: 768px){
         body{
         width: 100vw;
         padding: 0px;
@@ -606,7 +596,7 @@ footer a{
             margin: 5% 0 5% 0;
         }
 
-        nav{
+        .topic{
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -652,7 +642,6 @@ footer a{
 
         .houses{
             flex-direction: column-reverse;
-            max-height: auto;
         }
 
         .hebergements{
@@ -666,7 +655,6 @@ footer a{
         .bloc6{
             flex-direction: column;
             flex-wrap: nowrap;
-            height: 1300px;
             justify-content: space-between;
             padding: 0 0 20px 0;
         }
@@ -679,7 +667,6 @@ footer a{
         }
 
         .popular{
-            height: 520px;
             width: auto;
             padding: 10% 5% 10% 5%;
             flex-direction: column;
@@ -688,7 +675,6 @@ footer a{
 
         .bloc3{
             flex-direction: column;
-            height: 480px;
             padding: 20px 0 20px 0;
             justify-content: space-between;
         }
